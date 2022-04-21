@@ -1,0 +1,226 @@
+{
+  "projectionOrdering": {
+    "open": [
+      0
+    ],
+    "close": [
+      1
+    ],
+    "high": [
+      2
+    ],
+    "low": [
+      3
+    ],
+    "Category": [
+      4
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Stocks.Date",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Open",
+        "Name": "Sum(Stocks.Open)",
+        "Type": 1,
+        "Format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
+      },
+      {
+        "Restatement": "Close",
+        "Name": "Sum(Stocks.Close)",
+        "Type": 1,
+        "Format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
+      },
+      {
+        "Restatement": "High",
+        "Name": "Sum(Stocks.High)",
+        "Type": 1,
+        "Format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
+      },
+      {
+        "Restatement": "Low",
+        "Name": "Sum(Stocks.Low)",
+        "Type": 1,
+        "Format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
+      },
+      {
+        "Restatement": "Date",
+        "Name": "Stocks.Date",
+        "Type": 4,
+        "Format": "D"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "open",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "close",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "high",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "low",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 4,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Open",
+      "format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+      "queryName": "Sum(Stocks.Open)",
+      "roles": {
+        "open": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 258
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Stocks"
+                }
+              },
+              "Property": "Open"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "Close",
+      "format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+      "queryName": "Sum(Stocks.Close)",
+      "roles": {
+        "close": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 258
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Stocks"
+                }
+              },
+              "Property": "Close"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "High",
+      "format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+      "queryName": "Sum(Stocks.High)",
+      "roles": {
+        "high": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 258
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Stocks"
+                }
+              },
+              "Property": "High"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "Low",
+      "format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+      "queryName": "Sum(Stocks.Low)",
+      "roles": {
+        "low": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 258
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Stocks"
+                }
+              },
+              "Property": "Low"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "Date",
+      "format": "D",
+      "queryName": "Stocks.Date",
+      "roles": {
+        "Category": true
+      },
+      "sort": 1,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 519
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Stocks"
+            }
+          },
+          "Property": "Date"
+        }
+      }
+    }
+  ]
+}

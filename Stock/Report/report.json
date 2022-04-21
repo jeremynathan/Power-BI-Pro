@@ -1,0 +1,52 @@
+{
+  "id": 0,
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "PBI_CV_886A053E_9DFD_4EA0_A47D_CCAEB89AF969",
+    "ChicletSlicer1448559807354"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY22SU03",
+            "path": "BaseThemes/CY22SU03.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "PBI_CV_886A053E_9DFD_4EA0_A47D_CCAEB89AF969.pbiviz.json",
+            "path": "PBI_CV_886A053E_9DFD_4EA0_A47D_CCAEB89AF969.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_886A053E_9DFD_4EA0_A47D_CCAEB89AF969",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "ChicletSlicer1448559807354.pbiviz.json",
+            "path": "ChicletSlicer1448559807354.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "ChicletSlicer1448559807354",
+        "type": 0
+      }
+    }
+  ]
+}

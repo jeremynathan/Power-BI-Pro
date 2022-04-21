@@ -1,0 +1,150 @@
+{
+  "name": "c1691e5a7f0c27f5cf70",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 9.613733905579398,
+        "y": 0,
+        "z": 0,
+        "width": 506.78111587982829,
+        "height": 703.175965665236
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "PBI_CV_886A053E_9DFD_4EA0_A47D_CCAEB89AF969",
+    "projections": {
+      "open": [
+        {
+          "queryRef": "Sum(Stocks.Open)"
+        }
+      ],
+      "close": [
+        {
+          "queryRef": "Sum(Stocks.Close)"
+        }
+      ],
+      "high": [
+        {
+          "queryRef": "Sum(Stocks.High)"
+        }
+      ],
+      "low": [
+        {
+          "queryRef": "Sum(Stocks.Low)"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "Stocks.Date",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Stocks",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Open"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Stocks.Open)"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Close"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Stocks.Close)"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "High"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Stocks.High)"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Low"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Stocks.Low)"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Date"
+          },
+          "Name": "Stocks.Date"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 1,
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "s"
+                }
+              },
+              "Property": "Date"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true
+  }
+}

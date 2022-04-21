@@ -1,0 +1,22 @@
+{
+  "name": "Stocks",
+  "partitions": [
+    {
+      "name": "Stocks-359e0954-fc72-408f-899f-a8143a4ffaba",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

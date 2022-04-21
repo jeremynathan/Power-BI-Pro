@@ -1,0 +1,24 @@
+{
+  "name": "DateTableTemplate_91668ff0-a159-4f52-aa65-4b1e5dd04596",
+  "isHidden": true,
+  "isPrivate": true,
+  "partitions": [
+    {
+      "name": "DateTableTemplate_91668ff0-a159-4f52-aa65-4b1e5dd04596-1dbb98c4-f37d-4dab-83c2-3a97b9f01b30",
+      "mode": "import",
+      "source": {
+        "type": "calculated"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "__PBI_TemplateDateTable",
+      "value": "true"
+    },
+    {
+      "name": "DefaultItem",
+      "value": "DateHierarchy"
+    }
+  ]
+}

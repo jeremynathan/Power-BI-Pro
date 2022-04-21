@@ -1,0 +1,13 @@
+{
+  "name": "Volume",
+  "dataType": "int64",
+  "sourceColumn": "Volume",
+  "formatString": "0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Stock",
+  "compatibilityLevel": 1550,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true,
+      "fastCombine": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "relationships": [
+      {
+        "name": "b05be8fa-c005-4eff-9f98-d852342b36ea",
+        "fromTable": "Stocks",
+        "fromColumn": "Date",
+        "toTable": "LocalDateTable_8a35ed93-fe61-44f1-855a-ca5ea8e05727",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "Quote Pull",
+        "kind": "m",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.104.702.0 (22.04)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Quote Pull\",\"Stocks\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ]
+  }
+}
