@@ -29,39 +29,6 @@
         "Type": 1,
         "Format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
       }
-    ],
-    "Filters": [
-      {
-        "type": 0,
-        "expression": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Stocks"
-              }
-            },
-            "Property": "Date"
-          }
-        }
-      },
-      {
-        "type": 2,
-        "expression": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Stocks"
-                  }
-                },
-                "Property": "Close"
-              }
-            },
-            "Function": 0
-          }
-        }
-      }
     ]
   },
   "visualElements": [

@@ -67,8 +67,26 @@
       0
     ]
   },
-  "queryMetadata": null,
-  "visualElements": null,
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Stock",
+        "Name": "Stocks.Stock",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
   "selects": [
     {
       "displayName": "Stock",
